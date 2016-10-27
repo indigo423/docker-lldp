@@ -24,7 +24,7 @@ startSnmpDaemon() {
 }
 
 startLldpd() {
-  ${LLDPD_BIN} -d
+  ${LLDPD_BIN} -x -dd -l
 }
 
 # Evaluate arguments for build script.
