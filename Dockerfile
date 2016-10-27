@@ -11,6 +11,7 @@ RUN yum install -y net-snmp \
     mkdir -p /etc/snmp/conf.d
 
 COPY config/snmpd.conf /etc/snmp/snmpd.conf
+COPY config/lldpd.conf /etc/lldpd.conf
 COPY assets/* /etc/snmp/conf.d/
 COPY ./docker-entrypoint.sh /
 
